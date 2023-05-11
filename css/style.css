@@ -1,0 +1,486 @@
+@import url(../fonts/GothamBook.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	background-image: url('../imagen/bg-2.jpg');
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+.entrada{
+    font-size: 15pt;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.entradainp{
+    width: 90%;
+    padding: 5px;
+    font-size: 16pt;
+    display: block;
+    margin: 25px auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.cambioinp{
+    width: 90%;
+    padding: 5px;
+    font-size: 16px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'arial';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	font-family: 'arial';
+	letter-spacing: 2px;
+	font-size: 14px;
+	line-height: 20px;
+}
+a{
+	text-decoration: none;
+
+}
+span {
+    font-family: 'GothamBook';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+header{
+	position: absolute;
+	width: 100%;
+}
+
+/*---------------------   -----------------------*/
+
+.wd20{
+	width: 20%;
+}
+.wd25{
+	width: 25%;
+}
+.wd30{
+	width: 30%;
+}
+.wd40{
+	width: 40%;
+}
+.wd50{
+	width: 50%;
+}
+.wd60{
+	width: 60%;
+}
+.wd70{
+	width: 70%;
+}
+.wd100{
+	width: 100%;
+}
+
+.textright{
+	text-align: right;
+}
+.textcenter{
+	text-align: center;
+}
+.textleft{
+	text-align: left;
+}
+
+/*---------------------NAV-----------------------*/
+.tit{
+	background: rgba(255, 255, 255, 0.5);	
+}
+
+.titulo{
+	text-align: center;
+	font-family: 'Critter';
+	font-size: 40px;
+	padding: 10px;
+	letter-spacing: 7px;
+	color: rgb(82, 72, 72);
+}
+
+nav ul{
+	background: rgba(230, 54, 83, 0.788);
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul > li a{
+	position: relative;
+}
+nav a{
+	color: 	black;
+	display: block;
+	font-size: 12pt;
+	font-family: 'GothamBook';
+	padding: 20px 40px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.5s ;	
+	font-weight: bold;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+nav li ul{
+	background: pink;
+	display: none;
+	position: absolute;
+	border-radius: 0 0 5px 5px;
+}
+
+nav li ul a{
+	position: relative;
+	padding: 10px 20px;
+	border-right: initial;
+	color: #414040;
+}
+
+nav >ul>li a:hover{
+    background-color: rgba(228, 41, 72, 0.788);
+	border-radius: 0 0 5px 5px;
+}
+
+
+/*--------------------------CONTAINER--------------------------*/
+.datousuario{
+width: 500px;
+background-color: rgba(255, 255, 255, 0.9);
+padding: 20px;
+ margin: 25px auto;
+ border-radius:10px;
+ border:3px solid #dedede;
+
+}
+.divUsuario{
+	background: rgba(230, 54, 83, 0.8);
+	padding: 5px 10px;
+	color: #FFF;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+.divDataUser{
+	padding: 10px;
+	margin: auto;
+}
+
+.divDataUser > div{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.divDataUser label{
+	width: 150px;
+	margin: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.divDataUser span{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 14pt;
+	font-family: 'Arial';
+	
+}
+
+
+
+.container{
+	padding: 10rem 15px 15px;
+}
+
+.register{
+	width: 450px;
+	margin: auto;
+}
+
+.container h2{
+	color: rgb(82, 72, 72);
+	margin:12px 0 10px 0;
+	font-size: 35px;
+	text-align: center;
+}
+
+hr{
+	
+	margin-bottom:20px;
+}
+
+form{
+	margin: auto;
+	padding: 20px 50px;
+	background-color: rgba(255, 255, 255, 0.9);
+	 border-radius:2px;
+	 border:3px solid #dedede;
+}
+
+label{
+	display: block;
+	font-size: 18px;
+	margin: 15px auto 5px auto;
+	letter-spacing:1px;
+}
+
+input, select{
+	width: 100%;
+	font-size: 15px;
+	padding: 5px;
+}
+
+
+/*--------------------------SEARCH--------------------------*/
+
+.form_search{
+	display: flex;
+	float:right;
+	background:initial;
+	padding:10px;
+	border-radius:10px;
+	margin: 20px;
+}
+#busqueda{
+	width: 17rem;	
+}
+
+.btn_search{
+	background:#000;
+	font-weight: bold;
+	color: #ffff;
+	padding: 0 20px;
+	width: 8rem;
+	border:0;
+	cursor:pointer;
+	margin-left:10px;
+	border-radius:5px;
+	
+}
+/*--------------------------ALERT--------------------------*/
+.alert{
+	width: 100%;
+	background: #65e07d66;
+	border-radius: 6px;
+	margin: 20px auto;
+}
+
+.msg_error{
+	color: #df1313;
+}
+
+.msg_save{
+	color: #126e00;
+}
+
+.alert p{
+	padding: 10px;
+	font-size: 15px;
+} 	
+
+/*--------------------------BUTTOM--------------------------*/
+
+.btn_save{
+	font-size: 15px;
+	background: #3538c2;
+	padding: 10px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 30px auto;
+	text-align:center;
+}
+
+.btn_crearcl{
+	width: 10rem;
+	background:#6D75E2;
+	color: #ffff;
+	padding: 12px;
+	border:0;
+	cursor:pointer;
+	margin:5px auto;
+	
+}
+
+.red{
+	background: red;
+}
+
+.green{
+	background: green;
+}
+
+.btn_cancel, .btn_ok{
+	width:120px;
+	background: #E53939;
+	color:#ffffff;
+	display:inline-block;
+	border:0;
+	padding:10px;
+	margin: 15px 10px;
+	font-size: 15px;
+	font-family: 'GothamBook';
+	font-weight:bold;
+	cursor: pointer;
+	
+}
+
+.btn_cancel{
+	background: #2373a8;
+}
+
+.volver{
+	background: #CF7A34;
+}
+
+.agregar{
+
+	background: #264A9E;
+	text-align:center;
+	color:white;
+	width:10rem;
+	cursor: pointer;
+	border-radius:5px;
+	padding:6px;
+	font-weight: bold;
+}
+/*--------------------------TABLE--------------------------*/
+
+.htabla{
+	font-size: 35px;
+	font-weight: bold;
+	font-weight: 700;
+	
+
+
+}
+
+.container{
+	color: rgb(82, 72, 72);
+	margin:12px 0 10px 0;
+	font-size: 25px;
+	text-align: center;
+}
+
+table{
+	background: rgba(255, 255, 255, 0.8);
+	border: solid 3px #000;
+	margin: 20px auto;
+	width: 97%;
+	border-collapse:collapse;
+}
+
+.service{
+	width: 35%;
+}
+
+.especialidad{
+	width: 70%;
+}
+
+th{
+	padding:10px;
+	font-weight:bold;
+	border-bottom:solid 3px #ccc;
+	font-size: 20px;
+	background: black;
+	color:white;
+}
+td{
+	padding:7px;
+	text-align: center;
+	border-bottom:solid 1px #ccc;
+	 font-family: 'GothamBook';
+    font-size: 15px;
+
+}
+
+tr:hover td{
+	background-color: pink;
+}
+
+.edit{
+	color: #00ccaa;
+}
+
+.mas{
+	color: red;
+}
+
+.delete{
+	color: #df1313;
+}
+
+/*--------------------------DELETE--------------------------*/
+.data_delete{
+	text-align: center;
+}
+
+.data_delete span{
+	font-weight:bold;
+	color: #00ccaa;
+	font-size:18px;
+}
+
+.data_delete form{
+	background:initial;
+	margin: auto;
+	padding: 10px 50px;
+	border:0;
+}
+
+/*-------------------------    -------------------------*/
+
+
+
+
